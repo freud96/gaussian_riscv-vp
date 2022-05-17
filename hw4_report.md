@@ -12,7 +12,7 @@ Homework 4 report
  
  
 **Experiment and result**
-    For this homework, we focus on the difference by using DMA shown in (link) for performing transfer between from/to Sobel filter module or using processor(memcpy) shown in https://github.com/freud96/gaussian_riscv-vp/blob/main/DMA.JPG. when we only use processor, it took approximitely **3431411650 ns** to simulate while for when using DMA it took only  **3208588470 ns**. Then number of instruction executed with DMA moving is far less **73926408** than using processor **86378263**. Result of DMA simulation can be found at (link) and Result of processor transfering data at (link). The reason why the simulated time and instruction number is lesser when using DMA is that the accelerator accesses the main memory without the processor unit. 
+    For this homework, we focus on the difference by using DMA shown in https://github.com/freud96/gaussian_riscv-vp/blob/main/DMA.JPG for performing transfer between from/to Sobel filter module or using processor(memcpy) shown in https://github.com/freud96/gaussian_riscv-vp/blob/main/Processor_move.JPG. when we only use processor, it took approximitely **3431411650 ns** to simulate while for when using DMA it took only  **3208588470 ns**. Then number of instruction executed with DMA moving is far less **73926408** than using processor **86378263**. Result of DMA simulation can be found at (link) and Result of processor transfering data at (link). The reason why the simulated time and instruction number is lesser when using DMA is that the accelerator accesses the main memory without the processor unit. 
 
 
     
